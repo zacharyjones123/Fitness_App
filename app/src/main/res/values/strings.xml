@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Fitness_App</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_name">Title</string>
+    <string name="purpose_activity_name">Purpose</string>
+    <string name="cardio_activity_name">Cardio</string>
+    <string name="nutrition_activity_name">Nutrition</string>
+    <string name="weightTraining_activity_name">Weight Training</string>
+
+    <string name="monday_activity_name">Monday</string>
+    <string name="tuesday_activity_name">Tuesday</string>
+    <string name="wednesday_activity_name">Wednesday</string>
+    <string name="thursday_activity_name">Thursday</string>
+    <string name="friday_activity_name">Friday</string>
+    <string name="saturday_activity_name">Saturday</string>
+    <string name="sunday_activity_name">Sunday</string>
+
+
+</resources>

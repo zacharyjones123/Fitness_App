@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zacharyjones.fitness_app">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fitness_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TitleActivity"
+            android:label="@string/title_activity_name" >
+        </activity>
+
+        <activity
+            android:name=".PurposeActivity"
+            android:label="@string/purpose_activity_name" >
+        </activity>
+
+        <activity
+            android:name=".CardioActivity"
+            android:label="@string/cardio_activity_name" >
+        </activity>
+
+        <activity
+            android:name=".NutritionActivity"
+            android:label="@string/nutrition_activity_name" >
+        </activity>
+
+        <activity
+            android:name=".WeightTrainingActivity"
+            android:label="@string/weightTraining_activity_name" >
+        </activity>
+
+        <activity
+            android:name=".MondayActivity"
+            android:label="@string/monday_activity_name" >
+        </activity>
+
+        <activity
+            android:name=".TuesdayActivity"
+            android:label="@string/tuesday_activity_name" >
+        </activity>
+
+        <activity
+            android:name=".WednesdayActivity"
+            android:label="@string/wednesday_activity_name" >
+        </activity>
+
+        <activity
+            android:name=".ThursdayActivity"
+            android:label="@string/thursday_activity_name" >
+        </activity>
+
+        <activity
+            android:name=".FridayActivity"
+            android:label="@string/friday_activity_name" >
+        </activity>
+
+        <activity
+            android:name=".SaturdayActivity"
+            android:label="@string/saturday_activity_name" >
+        </activity>
+
+        <activity
+            android:name=".SundayActivity"
+            android:label="@string/sunday_activity_name" >
+        </activity>
+    </application>
+
+</manifest>
