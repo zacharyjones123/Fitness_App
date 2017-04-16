@@ -15,67 +15,80 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome To Fitness App"
         android:id="@+id/textView3"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:textAlignment="center"
-        android:shape= "oval"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="#caf776"
         android:color="#ffffff"
+        android:scaleX="2"
+        android:scaleY="3"
+        android:shape="oval"
+        android:text="My Fitness App"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold"
-        android:background="#caf776" />
+        tools:scaleX="2" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Purpose"
         android:id="@+id/purpose_button"
-        android:height="80dp"
-        android:width="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:height="150dp"
         android:background="@color/purpose"
-        android:layout_below="@+id/textView3"
-        android:layout_alignLeft="@+id/weightTraining_button"
-        android:layout_alignStart="@+id/weightTraining_button" />
+        android:text="Purpose"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/weightTraining_button"
+        android:layout_alignLeft="@+id/nutrition_button"
+        android:layout_alignStart="@+id/nutrition_button" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Weight Training"
         android:id="@+id/weightTraining_button"
-        android:layout_below="@+id/purpose_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:height="80dp"
-        android:width="100dp"
-        android:background="@color/weight_training" />
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nutrition"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="44dp"
+        android:layout_toEndOf="@+id/nutrition_button"
+        android:layout_toRightOf="@+id/nutrition_button"
+        android:width="150dp"
+        android:height="150dp"
+        android:background="@color/weight_training"
+        android:text="Weight Training"
+        android:textSize="18sp" />
+
+    <Button
         android:id="@+id/nutrition_button"
-        android:layout_below="@+id/weightTraining_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:height="80dp"
-        android:width="100dp"
-        android:background="@color/nutrition" />
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cardio"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:width="150dp"
+        android:height="150dp"
+        android:background="@color/nutrition"
+        android:text="Nutrition"
+        android:textSize="24sp"
+        android:layout_below="@+id/purpose_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
         android:id="@+id/cardio_button"
-        android:layout_below="@+id/nutrition_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:height="80dp"
-        android:width="100dp"
-        android:background="@color/cardio" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nutrition_button"
+        android:layout_alignBottom="@+id/nutrition_button"
+        android:layout_toEndOf="@+id/nutrition_button"
+        android:layout_toRightOf="@+id/nutrition_button"
+        android:width="150dp"
+        android:height="150dp"
+        android:background="@color/cardio"
+        android:text="Cardio"
+        android:textSize="24sp" />
 </RelativeLayout>

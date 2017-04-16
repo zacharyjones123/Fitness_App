@@ -14,12 +14,6 @@
     tools:showIn="@layout/activity_weight_training"
     android:background="@color/weight_training">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to the Weight Training Page"
-        android:id="@+id/textView" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,15 +21,16 @@
         android:id="@+id/weightTrainingBack_button"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Monday"
         android:id="@+id/weightTrainingMonday_button"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -43,7 +38,8 @@
         android:text="Tuesday"
         android:id="@+id/weightTrainingTuesday_button"
         android:layout_below="@+id/weightTrainingMonday_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -51,7 +47,8 @@
         android:text="Wednesday"
         android:id="@+id/weightTrainingWednesday_button"
         android:layout_below="@+id/weightTrainingTuesday_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -59,7 +56,8 @@
         android:text="Thursday"
         android:id="@+id/weightTrainingThursday_button"
         android:layout_below="@+id/weightTrainingWednesday_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -67,7 +65,8 @@
         android:text="Friday"
         android:id="@+id/weightTrainingFriday_button"
         android:layout_below="@+id/weightTrainingThursday_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/weightTrainingThursday_button"
+        android:layout_alignEnd="@+id/weightTrainingThursday_button" />
 
     <Button
         android:layout_width="wrap_content"
@@ -75,7 +74,8 @@
         android:text="Saturday"
         android:id="@+id/weightTrainingSaturday_button"
         android:layout_below="@+id/weightTrainingFriday_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/weightTrainingFriday_button"
+        android:layout_alignEnd="@+id/weightTrainingFriday_button" />
 
     <Button
         android:layout_width="wrap_content"
@@ -83,6 +83,27 @@
         android:text="Sunday"
         android:id="@+id/weightTrainingSunday_button"
         android:layout_below="@+id/weightTrainingSaturday_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/a8295"
+        android:layout_marginRight="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/weightTrainingWednesday_button"
+        android:layout_below="@+id/imageView3"
+        android:layout_toRightOf="@+id/weightTrainingWednesday_button" />
 
 </RelativeLayout>
